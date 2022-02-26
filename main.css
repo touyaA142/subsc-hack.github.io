@@ -18,3 +18,1623 @@
 #gnav a{
    color: #ffffff !important;
 }
+/ *
+テーマ名：ミニマリズム
+テーマURI：https：//blog.hatena.ne.jp/-/store/theme/8599973812270629022
+説明：*この得のフィギュアデザインを来版ギ落し、見さをしてに表現した得。 hitsuzi.hatenablog.com/entry/minimalism]*デモサイト[http://minimalism-theme.hatenablog.com/]*更新生活-2017 / 06 / 18ver0.1（初版）公開-2018/03/30 SSLに相手-2018/09/09デザインの微計
+著者：コドミス
+著者URI：https：//blog.hatena.ne.jp/codomisu/
+* /
+@charset "utf-8";
+@import url（ "// maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"）;
+/ *
+テーマ：ミニマリズム
+著者：コドミス
+説明：
+園のデザインである「美」をする
+
+
+※未だにコードを整理してください2018/09/09
+
+MITライセンスの下でライセンスされています。
+* /
+/ *インポート正規化* /
+/ *！normalize.css v3.0.1 | MITライセンス| git.io/normalize * /
+/ **
+* 1。デフォルトのフォントファミリをsans-serifに設定します。
+* 2.無効にせずに、向きの変更後にiOSのテキストサイズが調整されないようにします
+*ユーザーズーム。
+* /
+
+/ *レスポンシブ：はい* /
+
+html {
+  フォントファミリー：sans-serif;
+  / * 1 * /
+  -ms-text-size-adjust：100％;
+  / * 2 * /
+  -webkit-text-size-adjust：100％;
+  / * 2 * /
+}
+/ **
+*デフォルトのマージンを削除します。
+* /
+体 {
+  マージン：0;
+}
+/ * HTML5表示定義
+================================================== ======================== * /
+/ **
+* IE8 / 9のHTML5要素に対して定義されていない正しい `block`表示。
+* IE10 / 11およびFirefoxの `details`または` summary`に定義されていない `block`の表示を修正しました。
+* IE11の `main`に定義されていない` block`表示を修正しました。
+* /
+記事、
+さておき、
+詳細、
+figcaption、
+形、
+フッター、
+ヘッダ、
+hgroup、
+主要、
+nav、
+セクション、
+まとめ {
+  表示ブロック;
+}
+/ **
+* 1. IE8 / 9で定義されていない `inline-block`の表示を修正します。
+* 2. Chrome、Firefox、Operaの `progress`の垂直方向の配置を正規化します。
+* /
+オーディオ、
+キャンバス、
+進捗、
+ビデオ {
+  表示：インラインブロック;
+  / * 1 * /
+  vertical-align：ベースライン;
+  / * 2 * /
+}
+/ **
+*最新のブラウザがコントロールなしで `audio`を表示するのを防ぎます。
+* iOS5デバイスの余分な高さを削除します。
+* /
+audio：not（[controls]）{
+  表示：なし;
+  高さ：0;
+}
+/ **
+* IE8 / 9/10に存在しない `[hidden]`スタイリングに対処します。
+* IE 8/9/11、Safari、Firefox <22では `template`要素を非表示にします。
+* /
+[隠れた]、
+テンプレート {
+  表示：なし;
+}
+/ *リンク
+================================================== ======================== * /
+/ **
+* IE10のアクティブなリンクから灰色の背景色を削除します。
+* /
+a {
+  背景：透明;
+}
+/ **
+*すべてのブラウザでフォーカスを合わせたりマウスをホバーしたりしたときの読みやすさが向上します。
+* /
+a：アクティブ、
+a：ホバー{
+  アウトライン：0;
+}
+/ *テキストレベルのセマンティクス
+================================================== ======================== * /
+/ **
+* IE 8/9/10/11、Safari、およびChromeには存在しないアドレススタイル。
+* /
+abbr [title] {
+  border-bottom：1pxドット;
+}
+/ **
+* Firefox 4以降、Safari、Chromeではアドレススタイルが `600er`に設定されています。
+* /
+b、
+強い {
+  フォントの太さ：600;
+}
+/ **
+* SafariとChromeには存在しないアドレススタイル。
+* /
+dfn {
+  フォントスタイル：斜体;
+}
+/ **
+*アドレス変数 `h1`のフォント-`section`と` article`内のサイズとマージン
+* Firefox 4以降、Safari、およびChromeのコンテキスト。
+* /
+h1 {
+  フォントサイズ：2em;
+  マージン：0.67em 0;
+}
+/ **
+* IE8 / 9にはアドレススタイルがありません。
+* /
+マーク {
+  背景：＃ff0;
+  色：＃000;
+}
+/ **
+*すべてのブラウザで一貫性のない可変フォントサイズに対処します。
+* /
+小さい {
+  フォントサイズ：80％;
+}
+/ **
+*すべてのブラウザで `sub`と` sup`が `line-height`に影響を与えないようにします。
+* /
+サブ、
+sup {
+  フォントサイズ：75％;
+  行の高さ：0;
+  位置：相対;
+  vertical-align：ベースライン;
+}
+sup {
+  上：-0.5em;
+}
+サブ {
+  下：-0.25em;
+}
+/ *埋め込みコンテンツ
+================================================== ======================== * /
+/ **
+* IE8 / 9/10の `a`要素内の境界線を削除します。
+* /
+img {
+  ボーダー：0;
+}
+/ **
+* IE9 / 10/11で隠されていないオーバーフローを修正しました。
+* /
+svg：not（：root）{
+  オーバーフロー：非表示;
+}
+/ *コンテンツのグループ化
+================================================== ======================== * /
+/ **
+* IE8 / 9およびSafariにはアドレスマージンがありません。
+* /
+形 {
+  マージン：1em 40px;
+}
+/ **
+* Firefoxと他のブラウザの違いに対処します。
+* /
+時間{
+  -moz-box-sizing：content-box;
+  ボックスサイズ：content-box;
+  高さ：0;
+}
+/ **
+*すべてのブラウザでオーバーフローが含まれています。
+* /
+pre {
+  オーバーフロー：自動;
+}
+/ **
+*すべてのブラウザでの奇数の `em`単位のフォントサイズのレンダリングに対応します。
+* /
+コード、
+kbd、
+プレ、
+samp {
+  font-family：モノスペース、モノスペース;
+  フォントサイズ：1em;
+}
+/ *フォーム
+================================================== ======================== * /
+/ **
+*既知の制限：デフォルトでは、OSX上のChromeとSafariは非常に制限されています
+* `border`プロパティが設定されていない限り、` select`のスタイル。
+* /
+/ **
+* 1。正しい色が継承されていません。
+*既知の問題：無効になっている要素の色に影響します。
+* 2。継承されないフォントプロパティを修正します。
+* 3. Firefox 4以降、Safari、Chromeではアドレスマージンの設定が異なります。
+* /
+ボタン、
+入力、
+optgroup、
+選択する、
+textarea {
+  色：継承;
+  / * 1 * /
+  フォント：継承;
+  / * 2 * /
+  マージン：0;
+  / * 3 * /
+}
+/ **
+* IE8 / 9/10/11でアドレス `overflow`が` hidden`に設定されました。
+* /
+ボタン {
+  オーバーフロー：表示;
+}
+/ **
+* `button`と` select`の一貫性のない `text-transform`継承に対処します。
+*他のすべてのフォーム制御要素は `text-transform`値を継承しません。
+* Firefox、IE 8/9/10/11、およびOperaでの「ボタン」スタイルの継承を修正しました。
+* Firefoxの `select`スタイルの継承を修正しました。
+* /
+ボタン、
+選択する {
+  text-transform：なし;
+}
+/ **
+* 1. Android 4.0のWebKitバグを回避します。*（2）ネイティブの `audio`を破棄します
+*および `video`コントロール。
+* 2.iOSでクリック可能な `input`タイプのスタイルを設定できない問題を修正しました。
+* 3。画像タイプ間のカーソルスタイルの使いやすさと一貫性を向上させます
+* `input`など。
+* /
+ボタン、
+html input [type = "button"]、
+input [type = "reset"]、
+input [type = "submit"] {
+  -webkit-外観：ボタン;
+  / * 2 * /
+  カーソル：ポインタ;
+  / * 3 * /
+}
+/ **
+*無効な要素のデフォルトカーソルをリセットします。
+* /
+ボタン[無効]、
+html input [disabled] {
+  カーソル：デフォルト;
+}
+/ **
+* Firefox4以降で内側のパディングと境界線を削除します。
+* /
+ボタン::-moz-focus-inner、
+input ::-moz-focus-inner {
+  ボーダー：0;
+  パディング：0;
+}
+/ **
+* Firefox 4+に対応し、「入力」で「行の高さ」を「入力」に設定します。
+* UAスタイルシート。
+* /
+入力{
+  行の高さ：通常;
+}
+/ **
+*これらの要素のスタイルを設定しないことをお勧めします。
+* Firefoxの実装は、ボックスのサイズ、パディング、または幅を尊重しません。
+*
+* 1. IE8 / 9/10ではアドレスボックスのサイズが `content-box`に設定されています。
+* 2. IE8 / 9/10で余分なパディングを削除します。
+* /
+input [type = "checkbox"]、
+input [type = "radio"] {
+  ボックスサイズ：border-box;
+  / * 1 * /
+  パディング：0;
+  / * 2 * /
+}
+/ **
+* Chromeのインクリメント/デクリメントボタンのカーソルスタイルを修正しました。確かに
+* `input`の` font-size`値、それはカーソルスタイルを引き起こします
+*ボタンをデクリメントして `default`から` text`に変更します。
+* /
+input [type = "number"] ::-webkit-inner-spin-button、
+input [type = "number"] ::-webkit-outer-spin-button {
+  高さ：自動;
+}
+/ **
+* 1.SafariおよびChromeで `searchfield`に設定されたアドレス` appearance`。
+* 2.SafariおよびChromeでアドレス `box-sizing`が` border-box`に設定されている
+*（将来を保証するために `-moz`を含めます）。
+* /
+input [type = "search"] {
+  -webkit-外観：テキストフィールド;
+  / * 1 * /
+  -moz-box-sizing：content-box;
+  -webkit-box-sizing：content-box;
+  / * 2 * /
+  ボックスサイズ：content-box;
+}
+/ **
+* SafariおよびOSXのChromeで、内側のパディングと検索キャンセルボタンを削除します。
+* Safari（Chromeではない）は、検索入力にキャンセルボタンがある場合にキャンセルボタンをクリップします
+*パディング（および `textfield`の外観）。
+* /
+input [type = "search"] ::-webkit-search-cancel-button、
+input [type = "search"] ::-webkit-search-decoration {
+  -webkit-外観：なし;
+}
+/ **
+*一貫した境界線、マージン、およびパディングを定義します。
+* /
+フィールドセット{
+  ボーダー：1pxソリッド＃c0c0c0;
+  マージン：0 2px;
+  パディング：0.35em 0.625em 0.75em;
+}
+/ **
+* 1. IE8 / 9/10/11で継承されていない `color`を修正します。
+* 2.フィールドセットをゼロにした場合に人々が巻き込まれないように、パディングを削除します。
+* /
+伝説 {
+  ボーダー：0;
+  / * 1 * /
+  パディング：0;
+  / * 2 * /
+}
+/ **
+* IE8 / 9/10/11でデフォルトの垂直スクロールバーを削除します。
+* /
+textarea {
+  オーバーフロー：自動;
+}
+/ **
+* `font-weight`（上記のルールによって適用される）を継承しないでください。
+*注：OSXのChromeとSafariではデフォルトを安全に変更することはできません。
+* /
+optgroup {
+  フォントの太さ：600;
+}
+/ *テーブル
+================================================== ======================== * /
+/ **
+*テーブルセル間のほとんどの間隔を削除します。
+* /
+テーブル {
+  border-collapse：collapse;
+  ボーダー間隔：0;
+}
+td、
+th {
+  パディング：0;
+}
+/ *ミックスインをインポートします* /
+.clearfix {
+  表示ブロック;
+  *ズーム：1;
+}
+.clearfix：after {
+  表示ブロック;
+  可視性：非表示;
+  フォントサイズ：0;
+  高さ：0;
+  明確：両方;
+  コンテンツ： "。";
+}
+.inline-block {
+  表示：インラインブロック;
+  *表示：インライン;
+  *ズーム：1;
+}
+.ellipsis {
+  空白：nowrap;
+  テキストオーバーフロー：省略記号;
+  オーバーフロー：非表示;
+}
+/ *変数をインポートします* /
+/* 一般 */
+html、
+体 {
+  font-family：-apple-system、BlinkMacSystemFont、 'Helvetica Neue'、 'Hiragino Sans'、 'Hiragino Kaku Gothic ProN'、 '游ゴシックミディアム'、メイリオ、サンセリフ;
+  色：＃3f3f3f;
+  背景色：#ffffff;
+}
+a {
+  色：＃1487bd;
+}
+a：訪問済み{
+  色：＃789dae;
+}
+a：ホバー{
+  色：＃0f5373;
+}
+h1 a、
+h2 a、
+h3 a、
+h4 a、
+h5 a、
+h6 a、
+h1 a：ホバー、
+h2 a：ホバー、
+h3 a：ホバー、
+h4 a：ホバー、
+h5 a：ホバー、
+h6 a：ホバー、
+h1 a：visited、
+h2 a：visited、
+h3 a：訪問済み、
+h4 a：訪問済み、
+h5 a：訪問済み、
+h6 a：visited {
+  色：＃333333;
+  テキスト装飾：なし;
+}
+a.keyword {
+  テキスト装飾：なし;
+  border-bottom：1pxドット＃ECEEF1;
+  色：＃3f3f3f;
+}
+/ *ボタン* /
+.btn {
+  表示：インラインブロック;
+  *表示：インライン;
+  *ズーム：1;
+  パディング：4px 10px 4px;
+  マージンボトム：0;
+  行の高さ：18px;
+  色：＃3f3f3f;
+  背景色：#ffffff;
+  text-align：center;
+  垂直整列：中央;
+  border-top-right-radius：2px;
+  border-bottom-right-radius：0;
+  border-bottom-left-radius：0;
+  border-top-left-radius：0;
+  border-radius：2px;
+  background-clip：padding-box;
+  カーソル：ポインタ;
+  フォントサイズ：12px;
+  テキスト装飾：なし;
+  フォントの太さ：600;
+  ボーダー：1pxソリッドrgba（0、0、0、0.2）;
+  テキスト装飾：なし;
+}
+.btn：hover {
+  背景色：＃f5f5f5;
+  テキスト装飾：なし;
+}
+.btn-small {
+  パディング：2px 10px;
+  フォントサイズ：11px;
+}
+.btn-large {
+  パディング：13px 19px;
+  フォントサイズ：17px;
+  行の高さ：通常;
+  フォントの太さ：600;
+}
+/ *ヘッダー（ヘッダーコメント）
+できます中はiframeですが、
+＃globalheader-containerに壁紙色や文字色を指定するでiframe中着色ができます。
+* /
+＃globalheader-container {
+  背景色：＃333;
+  色：#fff;
+  位置：固定;
+  上：0;
+  左：0;
+  幅：100％;
+}
+/* 容器 */
+＃容器 {
+  幅：1140px;
+  マージン左：自動;
+  マージン右：自動;
+  マージンボトム：0;
+  パディングトップ：37px;
+}
+#container #content {
+  表示ブロック;
+  *ズーム：1;
+}
+#container #content：after {
+  表示ブロック;
+  可視性：非表示;
+  フォントサイズ：0;
+  高さ：0;
+  明確：両方;
+  コンテンツ： "。";
+}
+.globalheader-off #container {
+  パディングトップ：0;
+}
+/ * 2カラム
+＃主要 {
+  幅：640px;
+  フロート：左;
+}
+＃box2 {
+  幅：290px;
+  フロート：右;
+}
+/ * 1列のコメントアウトを外してください----
+
+＃主要 {
+幅：100％;
+フロート：なし;
+}
+
+＃box2 {
+幅：100％;
+フロート：なし;
+}
+
+＃box2-内部{
+幅：960px;
+.clearfix;
+オーバーフロー：非表示;
+}
+
+.hatena-module {
+text-align：左;
+パディング-右：20px;
+幅：300px;
+フロート：左;
+
+＆：nth-​​child（3n + 1）{
+明確：両方;
+}
+}
+
+---- END1カラム* /
+/ *ヘッダー* /
+＃ブログのタイトル {
+  font-family：-apple-system、BlinkMacSystemFont、 'Helvetica Neue'、 'Hiragino Sans'、 'Hiragino Kaku Gothic ProN'、 '游ゴシックミディアム'、メイリオ、サンセリフ;
+  text-align：center;
+  マージン：0;
+  パディング：50px 0;
+}
+＃タイトル {
+  マージン：0;
+}
+#title a {
+  色：＃3f3f3f;
+}
+＃blog-description {
+  font-family：-apple-system、BlinkMacSystemFont、 'Helvetica Neue'、 'Hiragino Sans'、 'Hiragino Kaku Gothic ProN'、 '游ゴシックミディアム'、メイリオ、サンセリフ;
+  フォントの太さ：通常;
+  フォントサイズ：80％;
+  マージン：5px 0 0 0;
+}
+/ *調整画像を設定した2 * /
+.header-image-enable #title {
+  パディングトップ：70px;
+}
+.header-image-enable #title、
+.header-image-enable＃blog-description {
+  パディング-左：20px;
+}
+/ *パンくず（☆ページで表示されます）* /
+＃top-box {
+  マージン：10px自動20px;
+  フォントサイズ：90％;
+}
+＃top-box .breadcrumb {
+  border-top：1px solid＃ECEEF1;
+  border-bottom：1px solid＃ECEEF1;
+  パディング：10px;
+}
+/ *エントリ* /
+.entry {
+  位置：相対;
+  margin-bottom：50px;
+}
+.entry-header {
+  パディング：15px 0;
+  margin-bottom：20px;
+  border-bottom：1px solid＃ECEEF1;
+  位置：相対;
+}
+.entry-title {
+  font-family：-apple-system、BlinkMacSystemFont、 'Helvetica Neue'、 'Hiragino Sans'、 'Hiragino Kaku Gothic ProN'、 '游ゴシックミディアム'、メイリオ、サンセリフ;
+  フォントサイズ：21px;
+  フォントの太さ：600;
+  行の高さ：35px;
+  マージン：15px 0 20px;
+}
+/ *日付* /
+。日にち {
+  フォントの太さ：600;
+  margin-bottom：15px;
+}
+.date a {
+  色：＃1487bd;
+  テキスト装飾：なし;
+  フォントサイズ：90％;
+}
+/ *カテゴリ* /
+.categories {
+  マージントップ：10px;
+  フォントサイズ：80％;
+}
+.categories a {
+  色：＃3f3f3f;
+}
+.categories.no-categories {
+  マージン：0;
+}
+/ *「編集する」ボタン* /
+.entry-header-menu {
+  位置：絶対;
+  下：0px;
+  左：-60px;
+}
+.entry-header-menu a {
+  表示：インラインブロック;
+  *表示：インライン;
+  *ズーム：1;
+  パディング：4px 10px 4px;
+  マージンボトム：0;
+  行の高さ：18px;
+  色：＃3f3f3f;
+  背景色：#ffffff;
+  text-align：center;
+  垂直整列：中央;
+  border-top-right-radius：2px;
+  border-bottom-right-radius：0;
+  border-bottom-left-radius：0;
+  border-top-left-radius：0;
+  border-radius：2px;
+  background-clip：padding-box;
+  カーソル：ポインタ;
+  フォントサイズ：12px;
+  テキスト装飾：なし;
+  フォントの太さ：600;
+  ボーダー：1pxソリッドrgba（0、0、0、0.2）;
+  テキスト装飾：なし;
+}
+.entry-header-menu a：hover {
+  背景色：＃f5f5f5;
+  テキスト装飾：なし;
+}
+/ *エントリーコンテンツ中のクローズ* /
+.entry-content {
+  フォントサイズ：15px;
+  行の高さ：34px;
+  パディング-下：10px;
+  border-bottom：1px solid＃ECEEF1;
+  font-family：-apple-system、BlinkMacSystemFont、 'Helvetica Neue'、 'Hiragino Sans'、 'Hiragino Kaku Gothic ProN'、 '游ゴシックミディアム'、メイリオ、サンセリフ;
+}
+.entry-content p {
+  マージン：0 0 1em 0;
+}
+.entry-content img {
+  最大幅：100％;
+}
+.entry-content h1、
+.entry-content h2、
+.entry-content h3、
+.entry-content h4、
+.entry-content h5、
+.entry-content h6 {
+  マージン：1.3em 0 0.8em 0;
+  行の高さ：1.5;
+}
+.entry-content h1 {
+  フォントサイズ：160％;
+}
+.entry-content h2 {
+  フォントサイズ：150％;
+}
+.entry-content h3 {
+  フォントサイズ：140％;
+}
+.entry-content h4 {
+  フォントサイズ：130％;
+}
+.entry-content h5 {
+  フォントサイズ：110％;
+}
+.entry-content h6 {
+  フォントサイズ：100％;
+}
+.entry-コンテンツテーブル{
+  border-collapse：collapse;
+  ボーダー間隔：0;
+  マージンボトム：1em;
+}
+.entry-コンテンツテーブルimg {
+  最大幅：なし;
+}
+.entry-コンテンツテーブルth、
+.entry-コンテンツテーブルtd {
+  ボーダー：1pxソリッド#ddd;
+  パディング：5px 10px;
+}
+.entry-コンテンツテーブルth {
+  背景：＃f5f5f5;
+}
+.entry-content blockquote {
+  ボーダー：1pxソリッド＃ECEEF1;
+  マージン：0 0 10px;
+  パディング：20px;
+}
+.entry-content blockquote p {
+  マージントップ：0;
+  マージンボトム：0;
+}
+.entry-content pre {
+  ボーダー：1pxソリッド＃ECEEF1;
+  マージン：0 0 10px;
+  パディング：20px;
+  空白：pre;
+}
+.entry-content pre> code {
+  マージン：0;
+  パディング：0;
+  空白：pre;
+  ボーダー：0;
+  背景：透明;
+  font-family： 'Monaco'、 'C​​onsolas'、 'C​​ourier New'、Courier、monospace、sans-serif;
+}
+.entry-コンテンツコード{
+  フォントサイズ：90％;
+  マージン：0 2px;
+  パディング：0 5px;
+  ボーダー：1pxソリッド#eaeaea;
+  背景色：＃f8f8f8;
+  border-radius：3px;
+  font-family： 'Monaco'、 'C​​onsolas'、 'C​​ourier New'、Courier、monospace、sans-serif;
+}
+.entry-content .hatena-asin-detail li {
+  行の高さ：1.4;
+}
+/ *エントリーフッター* /
+.entry-footer {
+  マージントップ：10px;
+}
+.entry-footer-section {
+  フォントサイズ：80％;
+  色：＃999999;
+}
+.entry-footer-section a {
+  色：＃999999;
+}
+.social-buttons、
+.entry-footer-html {
+  マージン：10px 0;
+}
+/ *コメント* /
+.comment-box ul {
+  リストスタイル：なし;
+  マージン：0 0 15px 0;
+  パディング：0;
+  フォントサイズ：95％;
+  行の高さ：1.7;
+}
+.comment-box li {
+  パディング：10px 0 10px 60px;
+  border-bottom：1px solid＃ECEEF1;
+  位置：相対;
+}
+.comment-box li：first-child {
+  border-top：1px solid＃ECEEF1;
+}
+.comment-box .read-more-comments {
+  パディング-左：0;
+}
+.comment-box .hatena-id-icon {
+  位置：絶対;
+  上：10px;
+  左：0;
+  幅：50px;
+  高さ：50px;
+  border-top-right-radius：3px;
+  border-bottom-right-radius：0;
+  border-bottom-left-radius：0;
+  border-top-left-radius：0;
+  border-radius：3px;
+  background-clip：padding-box;
+}
+.comment-user-name {
+  マージン：0 0 10px 0;
+  フォントの太さ：600;
+}
+.comment-content {
+  フォントサイズ：90％;
+  マージン：0 0 10px 0;
+  ワードラップ：ブレークワード;
+}
+.comment-content p {
+  マージン：0 0 10px 0;
+}
+.comment-metadata {
+  フォントサイズ：80％;
+  色：＃999999;
+  マージン：0;
+}
+.comment-metadata a {
+  色：＃999999;
+}
+.leave-comment-title {
+  表示：インラインブロック;
+  *表示：インライン;
+  *ズーム：1;
+  パディング：4px 10px 4px;
+  マージンボトム：0;
+  行の高さ：18px;
+  色：＃3f3f3f;
+  背景色：#ffffff;
+  text-align：center;
+  垂直整列：中央;
+  border-top-right-radius：2px;
+  border-bottom-right-radius：0;
+  border-bottom-left-radius：0;
+  border-top-left-radius：0;
+  border-radius：2px;
+  background-clip：padding-box;
+  カーソル：ポインタ;
+  フォントサイズ：12px;
+  テキスト装飾：なし;
+  フォントの太さ：600;
+  ボーダー：1pxソリッドrgba（0、0、0、0.2）;
+  テキスト装飾：なし;
+}
+.leave-comment-title：hover {
+  背景色：＃f5f5f5;
+  テキスト装飾：なし;
+}
+/ *サイドバー* /
+＃box2 {
+  フォントサイズ：85％;
+  行の高さ：1.5;
+}
+.hatena-module {
+  マージンボトム：60px;
+}
+.hatena-module-title {
+  フォントの太さ：600;
+  margin-bottom：15px;
+  フォントサイズ：120％;
+  パディング：0 0 5px 5px;
+  border-bottom：1px solid＃ECEEF1;
+}
+.hatena-module-title a {
+  色：＃3f3f3f;
+  テキスト装飾：なし;
+}
+.hatena-module-title a：hover {
+  テキスト装飾：下線;
+}
+/ *プロファイルモジュール* /
+.hatena-module-profile .profile-icon {
+  フロート：左;
+  マージン：0 10px 10px 0;
+  border-top-right-radius：5px;
+  border-bottom-right-radius：0;
+  border-bottom-left-radius：0;
+  border-top-left-radius：0;
+  border-radius：5px;
+  background-clip：padding-box;
+}
+.hatena-module-profile .id {
+  表示ブロック;
+  フォントの太さ：600;
+  フォントサイズ：110％;
+  margin-bottom：5px;
+}
+.hatena-module-profile .profile-description {
+  フォントサイズ：90％;
+}
+.hatena-module-profile .profile-description p {
+  マージントップ：0;
+}
+/ * urllistモジュール
+コル・オンライン記事・最新のコメント・月別分析・パッケージ箱は.hatena-urllist
+* /
+.hatena-urllist {
+  リストスタイル：なし;
+  マージン：0 0 0 0;
+  パディング：0 0 0 0;
+}
+.hatena-urllist li {
+  パディング：8px 0;
+  border-bottom：1px solid＃ECEEF1;
+  行の高さ：1.5;
+}
+.hatena-urllist li a {
+  テキスト装飾：なし;
+}
+/ *検索モジュール* /
+.hatena-module-search-box .search-form {
+  ボーダー：1pxソリッド＃ECEEF1;
+  border-top-right-radius：3px;
+  border-bottom-right-radius：0;
+  border-bottom-left-radius：0;
+  border-top-left-radius：0;
+  border-radius：3px;
+  background-clip：padding-box;
+  幅：100％;
+  -moz-box-sizing：border-box;
+  ボックスサイズ：border-box;
+  位置：相対;
+}
+.hatena-module-search-box .search-module-input {
+  パディング：10px 10px;
+  色：＃3f3f3f;
+  背景：なし;
+  境界線：なし;
+  概要：なし;
+  高さ：20px;
+  幅：90％;
+}
+.hatena-module-search-box .search-module-button {
+  幅：35px;
+  高さ：35px;
+  背景：透明なURL（// blog.hatena.ne.jp/images/theme/search.png）繰り返しなし右中央;
+  境界線：なし;
+  概要：なし;
+  テキストインデント：-9999px;
+  位置：絶対;
+  上：1px;
+  右：10px;
+  不透明度：0.5;
+}
+.hatena-module-search-box .search-module-button：hover {
+  不透明度：0.85;
+}
+/ *ポケットベル* /
+.pager {
+  マージン：1em 0;
+  表示ブロック;
+  *ズーム：1;
+}
+.pager：after {
+  表示ブロック;
+  可視性：非表示;
+  フォントサイズ：0;
+  高さ：0;
+  明確：両方;
+  コンテンツ： "。";
+}
+.pager .pager-prev {
+  フロート：左;
+  text-align：左;
+  幅：45％;
+}
+.pager .pager-next {
+  フロート：右;
+  text-align：right;
+  幅：45％;
+}
+/ *フッター* /
+#footer {
+  パディング：30px 0;
+  text-align：center;
+  色：＃999999;
+  行の高さ：1.5;
+  フォントサイズ：80％;
+}
+#footer p {
+  マージン：0;
+}
+#footer a {
+  色：＃999999;
+}
+/ *ページについて* /
+.page-dtについて{
+  フォントサイズ：16px;
+  フォントの太さ：600;
+  border-bottom：1px solid #dfdfdf;
+  margin-bottom：5px;
+}
+.page-ddについて{
+  マージン左：0;
+  margin-bottom：30px;
+}
+/ *アーカイブページ* /
+.page-archive .archive-entries .archive-entry {
+  マージンボトム：3em;
+}
+.page-archive .archive-entries .entry-title {
+  フォントサイズ：130％;
+  マージン：0 0 .5em;
+}
+.page-archive .archive-entries .categories {
+  マージン：0 0 .5em;
+}
+.page-archive .archive-entries .entry-description {
+  マージン：0 0 1em;
+  フォントサイズ：13px;
+  行の高さ：25px;
+}
+.page-archive .categories a {
+  色：＃3f3f3f;
+  テキスト装飾：なし;
+  表示：インラインブロック;
+  *表示：インライン;
+  *ズーム：1;
+  margin-bottom：5px;
+}
+
+.shrbtn {
+  パディング：0;
+  マージン：15px 0;
+  幅：100％;
+  背景：＃ECEEF1;
+  text-align：center;
+  表示：インラインフレックス;
+}
+
+.share_btn {
+  表示：インラインブロック;
+  幅：calc（100％/ 5）;
+  マージン：4px 6px;
+  高さ：40px;
+  行の高さ：40px;
+  フォントサイズ：18px;
+  色：＃3f3f3f;
+  border：1px solid＃ECEEF1;
+  border-radius：0;
+  text-align：center;
+  垂直整列：中央;
+  オーバーフロー：非表示;
+  フォントの太さ：600;
+  遷移：.3s;
+  背景：#fafafa;
+}
+
+.share_btn：first-of-type {
+  マージン左：0;
+}
+
+.share_btn：last-of-type {
+  margin-right：0;
+}
+
+.share_btn：hover {
+  色：＃3f3f3f;
+}
+
+.share_btn .fa {line-height：40px}
+
+
+/ * ###リレーラウンジ### * /
+#gnav {
+  border-top：1px solid＃ECEEF1;
+  border-bottom：1px solid＃ECEEF1;
+  マージン：0 0 10px;
+  背景：#ffffff;
+  フォントサイズ：0;
+  パディング：0 0 0;
+}
+
+#gnav .menu a {
+  表示ブロック;
+  色：＃3f3f3f;
+  フォントサイズ：13px;
+  フォントの太さ：500;
+  text-decoration：none;
+  text-align：center;
+  オーバーフロー：非表示;
+  ボックスサイズ：border-box;
+
+}
+
+
+#gnav .gnav-inner {
+  幅：100％;
+  パディング：12px 20px;
+  オーバーフロー-x：自動;
+  オーバーフロー-y：非表示;
+  ボックスサイズ：border-box;
+  text-align：center;
+  空白：nowrap;
+  マージン：0自動;
+  -webkit-font-smoothing：アンチエイリアス;
+  -webkit-オーバーフロー-スクロール：タッチ;
+}
+
+#gnav .menu {
+  表示：インラインブロック;
+}
+
+/ * ### StranceLouseを横一に来### * /
+＃top-editarea .section {
+  幅：100％;
+  マージン左：自動;
+  マージン右：自動;
+
+}
+
+＃top-editarea {
+  margin-bottom：15px;
+}
+
+.id a {
+  色：＃3f3f3f;
+  テキスト装飾：なし;
+  font-family：-apple-system、BlinkMacSystemFont、 'Helvetica Neue'、 'Hiragino Sans'、 'Hiragino Kaku Gothic ProN'、 '游ゴシックミディアム'、メイリオ、サンセリフ;
+}
+
+
+.hatena-module-profile .profile-description {
+  font-family：-apple-system、BlinkMacSystemFont、 'Helvetica Neue'、 'Hiragino Sans'、 'Hiragino Kaku Gothic ProN'、 '游ゴシックミディアム'、メイリオ、サンセリフ;
+}
+
+。目次 {
+  位置：相対;
+  背景色：#fafafa;
+  border：1px solid＃ECEEF1;
+  パディング：60px 70px 25px;
+  border-radius：0;
+  フォントサイズ：14px;
+  行の高さ：28px;
+}
+
+
+.table-of-contents :: before {
+  位置：絶対;
+  表示ブロック;
+  text-align：center;
+  上：15px;
+  左：50％;
+  マージン左：-1em;
+  フォントサイズ：20px;
+  フォントの太さ：700;
+  コンテンツ： '目次';
+  z-index：2;
+}
+
+
+.table-of-contents li a {
+  テキスト装飾：なし;
+  行の高さ：35px;
+  色：＃3f3f3f;
+}
+
+.archive-header-category {
+  margin-bottom：25px;
+}
+
+.archive-heading {
+  font-family：-apple-system、BlinkMacSystemFont、 'Helvetica Neue'、 'Hiragino Sans'、 'Hiragino Kaku Gothic ProN'、 '游ゴシックミディアム'、メイリオ、サンセリフ;
+  border-bottom：1px solid＃ECEEF1;
+  フォントの太さ：600;
+  フォントサイズ：21px;
+  行の高さ：35px;
+  padding-bottom：5px;
+  margin-bottom：25px;
+}
+
+.footer {
+  背景：＃3f3f3f;
+  色：#fff;
+  パディング：30px 0;
+}
+.footer ul li {
+  text-align：center;
+  表示ブロック;
+}
+
+.footer .footer-title {
+  margin-bottom：10px;
+}
+
+.footer .footer-copyright {
+  font-size：12px;
+}
+
+.footer-list {
+  パディング：0;
+}
+
+.categories a {
+  色：＃3f3f3f;
+  テキスト装飾：なし;
+  パディング：4px 0;
+  border-radius：0;
+  font-size：13px;
+  垂直整列：中央;
+  マージン右：10px;
+}
+
+.categories a：before {
+  font-family：FontAwesome;
+  コンテンツ： "\ f02b";
+  フォントサイズ：16px;
+  垂直整列：中央;
+  マージン右：5px;
+  色：＃2f2f2f;
+}
+
+/ *メディアクエリをインポートします* /
+/ *メディアクエリ-Retinaディスプレイ* /
+@media screen and（min-width：1139px）{
+
+  ＃blog-title #title {
+    フォントサイズ：37px;
+    行の高さ：60px;
+    font-weight：500;
+  }
+
+  .hatena-module-search-box .search-module-button {
+    背景：透明なURL（// blog.hatena.ne.jp/images/theme/search@2x.png）繰り返しなし右中央;
+    背景サイズ：20px 20px;
+  }
+  ＃容器 {
+    border-right：1px solid＃ECEEF1;
+    border-left：1px solid＃ECEEF1;
+  }
+  ＃コンテンツ{
+    マージン：35px 55px;
+  }
+  .breadcrumb-inner {
+    マージン：0 5％;
+  }
+  .date a {
+    色：＃3f3f3f;
+    テキスト装飾：なし;
+    フォントサイズ：15px;
+    パディング：1px;
+  }
+  。日にち {
+    フォントの太さ：500;
+    margin-bottom：5px;
+  }
+
+  .date：before {
+    font-family：FontAwesome;
+    コンテンツ： "\ f272";
+    左：0;
+    フォントサイズ：95％;
+    上：0;
+    色：＃3f3f3f;
+  }
+
+  .page-archive .entry-thumb {
+    border-radius：5px;
+    マージン右：20px;
+  }
+
+  ＃box2 .urllist-image {
+    border-radius：5px;
+    マージン右：15px;
+  }
+
+  .urllist-date-link time {
+    色：＃3f3f3f;
+    テキスト装飾：なし;
+    フォントサイズ：14px;
+    パディング：1px;
+  }
+
+  .urllist-date-link time：before {
+    font-family：FontAwesome;
+    コンテンツ： "\ f272";
+    左：0;
+    フォントサイズ：95％
+    上：0;
+    色：＃3f3f3f;
+  }
+
+
+  .shrbtn {
+    背景：なし;
+  }
+
+  ＃box2 {
+    マージントップ：15px;
+  }
+
+  .page-archive .archive-entries .entry-title {
+    margin-top：10px;
+    フォントサイズ：19px;
+  }
+
+  .hatena-urllist li a {
+    フォントサイズ：13px;
+    行の高さ：25px;
+    色：＃3f3f3f;
+  }
+  #gnav .menu a {
+    パディング：0 15px;
+  }
+}
+/ *メディアクエリ-タブレット* /
+@media screen and（max-width：1138px）{
+  #gnav .menu {
+    margin-right：20px;
+  }
+  #gnav .menu a {
+    フォントサイズ：12px;
+  }
+  ＃容器 {
+    幅：100％;
+    ワードラップ：ブレークワード;
+    オーバーフロー：非表示;
+    パディングトップ：0;
+  }
+  ＃主要 {
+    幅：93.75％;
+    マージン左：自動;
+    マージン右：自動;
+    フロート：なし;
+  }
+  ＃box2 {
+    幅：93.75％;
+    マージン左：自動;
+    マージン右：自動;
+    フロート：なし;
+  }
+  ＃box2-内部{
+    幅：100％;
+  }
+  .hatena-module {
+    幅：100％;
+    フロート：なし;
+  }
+  .date a {
+    色：＃3f3f3f;
+    テキスト装飾：なし;
+    フォントサイズ：15px;
+    パディング：1px;
+  }
+  。日にち {
+    フォントの太さ：500;
+    margin-bottom：5px;
+  }
+
+  .date：before {
+    font-family：FontAwesome;
+    コンテンツ： "\ f272";
+    左：0;
+    フォントサイズ：18px;
+    上：0;
+    色：＃3f3f3f;
+  }
+
+  .page-archive .entry-thumb {
+    border-radius：5px;
+  }
+  ＃box2 .urllist-image {
+    border-radius：5px;
+  }
+
+  .urllist-date-link time {
+    色：＃3f3f3f;
+    テキスト装飾：なし;
+    フォントサイズ：14px;
+    パディング：1px;
+  }
+
+  .urllist-date-link time：before {
+    font-family：FontAwesome;
+    コンテンツ： "\ f272";
+    左：0;
+    フォントサイズ：95％;
+    上：0;
+    色：＃3f3f3f;
+  }
+  .shrbtn {
+    背景：なし;
+  }
+。
+  .hatena-urllist li a {
+    色：＃3f3f3f;
+  }
+  .entry .entry-title {
+    フォントサイズ：22px;
+  }
+  .categories a {
+    色：＃3f3f3f;
+    テキスト装飾：なし;
+    パディング：2px 7px;
+    border-radius：2px;
+    マージン：0 2px;
+  }
+  .page-archive .archive-entries .entry-title {
+    フォントサイズ：18px;
+  }
+
+}
+/ *メディアクエリ-小型タブレットとスマートフォン* /
+@media screen and（max-width：640px）{
+  ＃globalheader-container {
+    位置：静的;
+  }
+  ＃blog-title #title {
+    フォントサイズ：30px;
+    font-weight：500;
+    font-family： 'Nunito'、sans-serif;
+  }
+  ＃blog-description {
+    font-size：11px;
+  }
+  ＃容器 {
+    幅：100％;
+    ワードラップ：ブレークワード;
+    オーバーフロー：非表示;
+    パディングトップ：0;
+  }
+  ＃主要 {
+    幅：93.75％;
+    マージン左：自動;
+    マージン右：自動;
+    フロート：なし;
+  }
+  ＃box2 {
+    幅：93.75％
+    マージン左：自動;
+    マージン右：自動;
+    フロート：なし;
+  }
+  ＃box2-内部{
+    幅：100％;
+  }
+  .hatena-module {
+    幅：100％;
+    フロート：なし;
+  }
+  .entry-header-menu {
+    上：-30px;
+    左：0px;
+  }
+  .archive-entry-header {
+    幅：-webkit-calc（100％-90px）;
+    幅：calc（100％-90px）;
+    フロート：右;
+  }
+  .page-archive .archive-entries .entry-title {
+    font-size：14px;
+    行の高さ：25px;
+    フォントの太さ：400;
+    マージン：0;
+  }
+  .archive-entries .entry-description {
+    font-size：11px;
+    display：none;
+  }
+  .page-archive .entry-thumb {
+    幅：75px;
+    高さ：75px;
+    ボーダー：1pxソリッド＃ECEEF1;
+    背景サイズ：100％;
+    float：left;
+    border-radius：3px;
+  }
+
+  .page-archive .categories {
+    表示：なし;
+  }
+
+  .page-archive .archive-entries .archive-entry {
+    マージンボトム：0;
+    パディング：17px 0;
+    border-bottom：1px solid＃ECEEF1;
+}
+  .date a {
+    色：＃3f3f3f;
+    テキスト装飾：なし;
+    フォントサイズ：12px;
+    パディング：1px;
+  }
+  。日にち {
+    フォントの太さ：500;
+    margin-bottom：5px;
+  }
+
+  .date：before {
+    font-family：FontAwesome;
+    コンテンツ： "\ f272";
+    左：0;
+    フォントサイズ：95％;
+    上：0;
+    色：＃3f3f3f;
+  }
+
+  .page-archive .social-buttons {
+    表示：なし;
+  }
+
+  ＃ブログのタイトル {
+    text-align：center;
+    パディング：35px 0 35px;
+    マージン：0;
+  }
+
+  .entry .entry-title {
+    フォントサイズ：18px;
+    行の高さ：30px;
+    マージン：10px 0 15px;
+    font-family：-apple-system、BlinkMacSystemFont、 'Helvetica Neue'、 'Hiragino Sans'、 'Hiragino Kaku Gothic ProN'、 '游ゴシックミディアム'、メイリオ、サンセリフ;
+  }
+
+  .entry .entry-header {
+    パディング：10px 0 10px 0;
+    border：none;
+  }
+
+  。目次 {
+    位置：相対;
+    背景色：#fafafa;
+    border：1px solid＃ECEEF1;
+    パディング：60px 45px 25px;
+    border-radius：0;
+    フォントサイズ：14px;
+    行の高さ：28px;
+  }
+
+  ＃box2 .urllist-image {
+    最大幅：100％;
+    幅：75px;
+    border-radius：5px;
+    マージン右：10px;
+    ボーダー：1pxソリッド＃ECEEF1;
+    高さ：75px;
+  }
+  .hatena-urllist li {
+    パディング：10px 0 0px;
+  }
+
+  .hatena-urllist li a {
+    フォントサイズ：13px;
+    行の高さ：20px;
+    フォントの太さ：500;
+    色：＃3f3f3f;
+    テキスト装飾：なし;
+  }
+
+  .archive-module-year {
+    border：none;
+  }
+
+  .urllist-date-link time {
+    色：＃3f3f3f;
+    テキスト装飾：なし;
+    フォントサイズ：12px;
+    パディング：1px;
+  }
+
+  .urllist-date-link time：before {
+    font-family：FontAwesome;
+    コンテンツ： "\ f272";
+    左：0;
+    フォントサイズ：95％;
+    上：0;
+    色：＃3f3f3f;
+  }
+  .archive-entries {
+    マージン：0 0 40px;
+  }
+
+  .id a {
+    フォントの太さ：通常;
+    テキスト装飾：なし;
+    色：＃3f3f3f;
+  }
+
+  .entry-content {
+    フォントサイズ：14px;
+  }
+  .hatena-module {
+    margin-bottom：40px;
+  }
+  .urllist-image {
+    幅：70px;
+    border-radius：5px;
+  }
+  .related-entries .related-entries-entry-body {
+    表示：なし;
+  }
+  。ページャ{
+    text-align：center;
+    margin-bottom：45px;
+  }
+  ：not（.permalink）>。pager-next {
+    float：none;
+    text-align：center;
+  }
+  ：not（.permalink）>。pager-next a {
+    テキスト装飾：なし;
+    パディング：10px 100px;
+    border-radius：4px;
+    ボーダー：1pxソリッド＃ECEEF1;
+    背景：#fafafa;
+    色：＃3f3f3f;
+  }
+  .pager-パーマリンク{
+    display：none;
+  }
+}
+/ *メディアクエリ-スマートフォン* /
