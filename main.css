@@ -1,1 +1,20 @@
+/* ### ヘッダーの背景色 ### */
+#blog-title{
+  background: #ffffff !important;
+}
+/* ### ブログタイトルの文字色 ### */
+#title a{
+  color: #カラーコード !important; 
+}
+/* ### ブログ説明の文字色 ### */
+#blog-description{
+  color:# カラーコード !important; 
+}
 
+/* ### メニューバーの背景色 ### */
+#gnav{
+   background: #000000 !important;
+}
+#gnav a{
+   color: #ffffff !important;
+}
